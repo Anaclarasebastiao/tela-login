@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --accent-collor: #8672FF;
+    --accent-color: #8672FF;
     --base-color: white;
     --text-color: #2E2B41;
     --input-color: #F3F0FF;
@@ -27,7 +27,7 @@ body {
     overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
     box-sizing: border-box;
     background-color: var(--base-color);
     height: 100vh;
@@ -54,15 +54,15 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  form > div{
+form>div {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
+}
 
-  form label{
+form label {
     flex-shrink: 0;
     height: 50px;
     width: 50px;
@@ -75,9 +75,9 @@ form {
     align-items: center;
     font-size: 1.5rem;
     font-weight: 500;
-  }
+}
 
-  form input{
+form input {
     box-sizing: border-box;
     flex-grow: 1;
     min-width: 0;
@@ -89,26 +89,26 @@ form {
     border-left: none;
     background-color: var(--input-color);
     transition: 150ms ease;
-  }
+}
 
-  form input:hover{
+form input:hover {
     border-color: var(--accent-color);
-  }
+}
 
-  form input:focus{
+form input:focus {
     outline: none;
     border-color: var(--text-color);
-  }
+}
 
-  div:has(input:focus) > label{
+div:has(input:focus)>label {
     background-color: var(--text-color);
-  }
+}
 
-  form input::placeholder{
+form input::placeholder {
     color: var(--text-color);
-  }
+}
 
-  form button{
+form button {
     margin-top: 10px;
     border: none;
     border-radius: 1000px;
@@ -120,38 +120,41 @@ form {
     text-transform: uppercase;
     cursor: pointer;
     transition: 150ms ease;
-  }
-  form button:hover{
+}
+
+form button:hover {
     background-color: var(--text-color);
-  }
-  form button:focus{
+}
+
+form button:focus {
     outline: none;
     background-color: var(--text-color);
-  }
+}
 
-  a{
+a {
     text-decoration: none;
     color: var(--accent-color);
-  }
-  a:hover{
-    text-decoration: underline;
-  }
+}
 
-  @media(max-width: 1100px) {
+a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 1100px) {
     .wrapper {
-      width: min(600px, 100%);
-      border-radius: 0;
+        width: min(600px, 100%);
+        border-radius: 0;
     }
-  }
-  
-  form div.incorrect label {
+}
+
+form div.incorrect label {
     background-color: #f06272;
-  }
-  
-  form div.incorrect input {
+}
+
+form div.incorrect input {
     border-color: #f06272;
-  }
-  
-  #error-message {
+}
+
+#error-message {
     color: #f06272;
-  }
+}
